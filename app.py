@@ -64,7 +64,7 @@ def get_gemini_response(api_key, user_query, context_answer):
         Keep your answer concise and conversational.
         """
         
-        model = genai.GenerativeModel('gemini-1.5-flash') # Using 1.5 Flash as requested
+        model = genai.GenerativeModel('gemini-2.5-flash') # Using 2.5 Flash as requested
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
