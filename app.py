@@ -84,7 +84,7 @@ st.caption("Powered by Google Gemini & your FAQ data")
 # Try to get API key from secrets, fallback to user input
 try:
     api_key = st.secrets["GOOGLE_API_KEY"]
-    st.success("✅ API key loaded from secrets")
+    st.success("Selamat datang. Saya adalah chatbot yang siap membantu pertanyaan kamu. Silahkan ajukan pertanyaan di kolom chat")
 except KeyError:
     st.warning("⚠️ No API key found in secrets. Please enter it below.")
     api_key = st.text_input(
